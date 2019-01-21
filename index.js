@@ -1,5 +1,5 @@
 const sequenceSeedValue = 1
-const numberOfSequences = 10
+const numberOfSequences = 20
 
 function addSequence(sequences) {
   const lastSequence = sequences[sequences.length - 1]
@@ -44,7 +44,7 @@ function consoleLogSequences(sequences) {
   let padCharacter = ' '
 
   for (let i = 0; i < sequences.length; ++i) {
-    const paddedSequence = sequences[i].join(padCharacter)
+    const paddedSequence = ''.padStart(sequences.length - i, ' ').concat(sequences[i].join(padCharacter))
     console.log(paddedSequence)
   }
 }
