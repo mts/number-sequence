@@ -32,13 +32,19 @@ function initSequences(sequenceSeedValue) {
   return [firstSequence]
 }
 
-function getSequences(sequenceSeedValue) {
-
-  const allSequences = initSequences(sequenceSeedValue)
-
+function extendSequences(allSequences) {
   for (i = 0; i < numberOfSequences; ++i) {
     addSequence(allSequences)
   }
+
+  return allSequences
+}
+
+function getSequences(sequenceSeedValue) {
+  let allSequences
+
+  allSequences = initSequences(sequenceSeedValue)
+  allSequences = extendSequences(allSequences)
 
   for (i = 0; i < allSequences.length; ++i) {
     console.log(allSequences[i].join(' '))
