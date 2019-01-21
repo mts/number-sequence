@@ -1,10 +1,12 @@
-function getSequence(allSequences) {
+const sequenceSeedValue = 1
+
+function addSequence(allSequences) {
+  const lastSequence = allSequences[allSequences.length - 1]
+  const nextSequence = []
+
   if (allSequences.length === 1) {
     return allSequences.push([allSequences[0][0], allSequences[0][0]])
   }
-
-  const lastSequence = allSequences[allSequences.length - 1]
-  const nextSequence = []
 
   for (i = 0; i < lastSequence.length; ++i) {
     if (i === 0 ) {
@@ -24,15 +26,18 @@ function getSequence(allSequences) {
   return allSequences.push(nextSequence)
 }
 
-function getSequences(seedValue) {
+function initSequences(allSequences, sequenceSeedValue) {
+  allSequences.push([sequenceSeedValue])
+}
+
+function getSequences(sequenceSeedValue) {
   let allSequences = []
   const numberOfSequences = 10
 
-  allSequences.push([seedValue])
-
+  initSequences(allSequences, sequenceSeedValue)
 
   for (i = 0; i < numberOfSequences; ++i) {
-    getSequence(allSequences)
+    addSequence(allSequences)
   }
 
   for (i = 0; i < allSequences.length; ++i) {
@@ -40,6 +45,4 @@ function getSequences(seedValue) {
   }
 }
 
-const seedValue = 1
-
-getSequences(seedValue)
+getSequences(sequenceSeedValue)
