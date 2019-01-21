@@ -1,12 +1,12 @@
 const sequenceSeedValue = 1
 const numberOfSequences = 10
 
-function addSequence(allSequences) {
-  const lastSequence = allSequences[allSequences.length - 1]
+function addSequence(sequences) {
+  const lastSequence = sequences[sequences.length - 1]
   const nextSequence = []
 
-  if (allSequences.length === 1) {
-    return allSequences.push([allSequences[0][0], allSequences[0][0]])
+  if (sequences.length === 1) {
+    return sequences.push([sequences[0][0], sequences[0][0]])
   }
 
   for (i = 0; i < lastSequence.length; ++i) {
@@ -24,7 +24,7 @@ function addSequence(allSequences) {
     nextSequence.push(lastSequence[i - 1] + lastSequence[i])
   }
 
-  return allSequences.push(nextSequence)
+  return sequences.push(nextSequence)
 }
 
 function initSequences(sequenceSeedValue) {
@@ -47,12 +47,12 @@ function consoleLog(sequences) {
 }
 
 function displaySequences(sequenceSeedValue) {
-  let allSequences
+  let sequences
 
-  allSequences = initSequences(sequenceSeedValue)
-  allSequences = extendSequences(allSequences)
+  sequences = initSequences(sequenceSeedValue)
+  sequences = extendSequences(sequences)
 
-  consoleLog(allSequences)
+  consoleLog(sequences)
 }
 
 displaySequences(sequenceSeedValue)
