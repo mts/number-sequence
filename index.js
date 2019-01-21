@@ -26,16 +26,14 @@ function getSequence(allSequences) {
 
 function getSequences(seedValue) {
   let allSequences = []
+  const numberOfSequences = 10
 
   allSequences.push([seedValue])
 
-  getSequence(allSequences)
-  getSequence(allSequences)
-  getSequence(allSequences)
-  getSequence(allSequences)
-  getSequence(allSequences)
-  getSequence(allSequences)
 
+  for (i = 0; i < numberOfSequences; ++i) {
+    getSequence(allSequences)
+  }
 
   for (i = 0; i < allSequences.length; ++i) {
     console.log(allSequences[i].join(' '))
