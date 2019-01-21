@@ -9,7 +9,7 @@ function addSequence(sequences) {
     return sequences.push([sequences[0][0], sequences[0][0]])
   }
 
-  for (i = 0; i < lastSequence.length; ++i) {
+  for (let i = 0; i < lastSequence.length; ++i) {
     if (i === 0 ) {
       nextSequence.push(lastSequence[0])
       continue
@@ -33,16 +33,19 @@ function initSequences(sequenceSeedValue) {
 }
 
 function extendSequences(sequences) {
-  for (i = 0; i < numberOfSequences; ++i) {
+  for (let i = 0; i < numberOfSequences - 1; ++i) {
     addSequence(sequences)
   }
 
   return sequences
 }
 
-function consoleLog(sequences) {
-  for (i = 0; i < sequences.length; ++i) {
-    console.log(sequences[i].join(' '))
+function consoleLogSequences(sequences) {
+  let padCharacter = ' '
+
+  for (let i = 0; i < sequences.length; ++i) {
+    const paddedSequence = sequences[i].join(padCharacter)
+    console.log(paddedSequence)
   }
 }
 
@@ -52,7 +55,7 @@ function displaySequences(sequenceSeedValue) {
   sequences = initSequences(sequenceSeedValue)
   sequences = extendSequences(sequences)
 
-  consoleLog(sequences)
+  consoleLogSequences(sequences)
 }
 
 displaySequences(sequenceSeedValue)
