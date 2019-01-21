@@ -1,4 +1,5 @@
 const sequenceSeedValue = 1
+const numberOfSequences = 10
 
 function addSequence(allSequences) {
   const lastSequence = allSequences[allSequences.length - 1]
@@ -26,15 +27,14 @@ function addSequence(allSequences) {
   return allSequences.push(nextSequence)
 }
 
-function initSequences(allSequences, sequenceSeedValue) {
-  allSequences.push([sequenceSeedValue])
+function initSequences(sequenceSeedValue) {
+  const firstSequence = [sequenceSeedValue]
+  return [firstSequence]
 }
 
 function getSequences(sequenceSeedValue) {
-  let allSequences = []
-  const numberOfSequences = 10
 
-  initSequences(allSequences, sequenceSeedValue)
+  const allSequences = initSequences(sequenceSeedValue)
 
   for (i = 0; i < numberOfSequences; ++i) {
     addSequence(allSequences)
