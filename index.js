@@ -32,23 +32,27 @@ function initSequences(sequenceSeedValue) {
   return [firstSequence]
 }
 
-function extendSequences(allSequences) {
+function extendSequences(sequences) {
   for (i = 0; i < numberOfSequences; ++i) {
-    addSequence(allSequences)
+    addSequence(sequences)
   }
 
-  return allSequences
+  return sequences
 }
 
-function getSequences(sequenceSeedValue) {
+function consoleLog(sequences) {
+  for (i = 0; i < sequences.length; ++i) {
+    console.log(sequences[i].join(' '))
+  }
+}
+
+function displaySequences(sequenceSeedValue) {
   let allSequences
 
   allSequences = initSequences(sequenceSeedValue)
   allSequences = extendSequences(allSequences)
 
-  for (i = 0; i < allSequences.length; ++i) {
-    console.log(allSequences[i].join(' '))
-  }
+  consoleLog(allSequences)
 }
 
-getSequences(sequenceSeedValue)
+displaySequences(sequenceSeedValue)
