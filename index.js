@@ -1,44 +1,44 @@
-function getSequence(allNumberSequences) {
-  if (allNumberSequences.length === 1) {
-    return allNumberSequences.push([allNumberSequences[0][0], allNumberSequences[0][0]])
+function getSequence(allSequences) {
+  if (allSequences.length === 1) {
+    return allSequences.push([allSequences[0][0], allSequences[0][0]])
   }
 
-  const lastNumberSequence = allNumberSequences[allNumberSequences.length - 1]
-  const nextNumberSequence = []
+  const lastSequence = allSequences[allSequences.length - 1]
+  const nextSequence = []
 
-  for (i = 0; i < lastNumberSequence.length; ++i) {
+  for (i = 0; i < lastSequence.length; ++i) {
     if (i === 0 ) {
-      nextNumberSequence.push(lastNumberSequence[0])
+      nextSequence.push(lastSequence[0])
       continue
     }
 
-    if (i === lastNumberSequence.length - 1) {
-      nextNumberSequence.push(lastNumberSequence[i - 1] + lastNumberSequence[i])
-      nextNumberSequence.push(lastNumberSequence[lastNumberSequence.length - 1])
+    if (i === lastSequence.length - 1) {
+      nextSequence.push(lastSequence[i - 1] + lastSequence[i])
+      nextSequence.push(lastSequence[lastSequence.length - 1])
       continue
     }
 
-    nextNumberSequence.push(lastNumberSequence[i - 1] + lastNumberSequence[i])
+    nextSequence.push(lastSequence[i - 1] + lastSequence[i])
   }
 
-  return allNumberSequences.push(nextNumberSequence)
+  return allSequences.push(nextSequence)
 }
 
 function getSequences(seedValue) {
-  let allNumberSequences = []
+  let allSequences = []
 
-  allNumberSequences.push([seedValue])
+  allSequences.push([seedValue])
 
-  getSequence(allNumberSequences)
-  getSequence(allNumberSequences)
-  getSequence(allNumberSequences)
-  getSequence(allNumberSequences)
-  getSequence(allNumberSequences)
-  getSequence(allNumberSequences)
+  getSequence(allSequences)
+  getSequence(allSequences)
+  getSequence(allSequences)
+  getSequence(allSequences)
+  getSequence(allSequences)
+  getSequence(allSequences)
 
 
-  for (i = 0; i < allNumberSequences.length; ++i) {
-    console.log(allNumberSequences[i].join(' '))
+  for (i = 0; i < allSequences.length; ++i) {
+    console.log(allSequences[i].join(' '))
   }
 }
 
