@@ -105,7 +105,7 @@ const configureCleanWebpack = () => {
 // Configure Html webpack
 const configureHtml = () => {
   return {
-    title: 'Papillon Explorer Client',
+    title: 'Number Sequence Client',
   }
 }
 

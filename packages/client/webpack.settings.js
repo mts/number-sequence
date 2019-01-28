@@ -5,7 +5,7 @@ require('dotenv').config()
 
 // Webpack settings exports
 module.exports = {
-  name: 'Papillon Explorer',
+  name: 'Number Sequence',
   copyright: 'MTS',
   paths: {
     src: {
