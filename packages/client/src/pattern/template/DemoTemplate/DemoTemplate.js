@@ -7,13 +7,17 @@ import SequenceCard from '../../molecule/card/SequenceCard'
 
 const DemoTemplate = ({ page, startPageRoute }) => (
   <div>
-    <h2>{page.name}</h2>
+    <h1 align="center" className="p-4 text-red">
+      {page.name}
+    </h1>
     <div>
       <Query query={SEQUENCES}>
         {({ data }) => (data.sequences && data.sequences.sequences ? <SequenceCard sequences={data.sequences.sequences} /> : null)}
       </Query>
 
-      <Link to={startPageRoute}> Back to Home Page</Link>
+      <div align="center" className="p-4">
+        <Link to={startPageRoute}> Back to Start Page</Link>
+      </div>
     </div>
   </div>
 )

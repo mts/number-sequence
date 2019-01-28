@@ -5,7 +5,15 @@ import uuidv1 from 'uuid/v1'
 const SequenceCard = ({ sequences }) => (
   <div>
     {sequences.map(sequence => {
-      return sequence.numbers.map(number => <div key={uuidv1()}>{number}</div>)
+      return (
+        <div className="d-flex flex-justify-center" key={uuidv1()}>
+          {sequence.numbers.map(number => (
+            <div className="px-3 border text-green border-blue" key={uuidv1()}>
+              {number}
+            </div>
+          ))}
+        </div>
+      )
     })}
   </div>
 )

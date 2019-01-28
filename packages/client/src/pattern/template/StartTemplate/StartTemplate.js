@@ -16,8 +16,8 @@ const StartPage = () => {
       <div className="d-flex flex-wrap flex-lg-nowrap">
         <SideBar />
         <HeroBanner>
-          <h1 className="f000-light mb-4">Number Sequence</h1>
-          <div className="f2-light pb-4">Number Sequence Demo Description</div>
+          <h1 className="f000-light mb-4">Number Sequences</h1>
+          <div className="f2-light pb-4">A delightful demo</div>
         </HeroBanner>
       </div>
     </div>
