@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../molecule/navigation/Header'
 import SideBar from '../../molecule/navigation/SideBar'
 import HeroBanner from '../../molecule/banner/HeroBanner'
+import { version } from '../../../../../../lerna.json'
 
 const StartPage = () => {
   window.scrollTo({
@@ -12,7 +13,7 @@ const StartPage = () => {
 
   return (
     <div>
-      <Header>Number Sequence</Header>
+      <Header>Number Sequence v{version}</Header>
       <div className="d-flex flex-wrap flex-lg-nowrap">
         <SideBar />
         <HeroBanner>
