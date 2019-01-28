@@ -1,6 +1,12 @@
 import React from 'react'
 import demoTemplateDefault from './DemoTemplate.render'
 
+jest.mock('react-apollo', () => {
+  return {
+    Query: () => <div />,
+  }
+})
+
 jest.mock('react-router-dom', () => {
   return {
     Link: () => <div />,

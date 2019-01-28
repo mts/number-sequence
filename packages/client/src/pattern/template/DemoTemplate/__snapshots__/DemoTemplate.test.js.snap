@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DemoTemplate /> Snaphot must match demoTemplateDefault 1`] = `
+<div>
+  <h1
+    align="center"
+    className="p-4 text-red"
+  />
+  <div>
+    <div />
+    <div
+      align="center"
+      className="p-4"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
