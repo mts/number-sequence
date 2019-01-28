@@ -1,5 +1,5 @@
 {
-  "pages": [{ "id": "start", "name": "start page name" }, { "id": "demo", "name": "demo page name" }],
+  "pages": [{ "id": "start", "name": "start page" }, { "id": "demo", "name": "Number Sequences" }],
   "sequences": [
     { "numbers": [1] },
     { "numbers": [1, 1] },
