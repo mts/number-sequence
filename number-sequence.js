@@ -63,4 +63,9 @@ function displaySequences(sequenceSeedValue) {
 
 displaySequences(sequenceSeedValue)
 
+export function getSequences(sequenceSeedValue) {
+  let sequences = initSequences(sequenceSeedValue)
+  return (sequences = extendSequences(sequences))
+}
+
 /* eslint-enable */
