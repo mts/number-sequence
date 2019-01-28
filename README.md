@@ -32,10 +32,6 @@
   </a>
 </p>
 
-## Status
-
-**⚠️ This project is a work in progress and is not ready for production use yet!**
-
 ## Client
 - Apollo GraphQL Client running at https://mts.github.io/number-sequence/
 
