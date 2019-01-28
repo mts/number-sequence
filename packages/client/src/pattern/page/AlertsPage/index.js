@@ -1,3 +1,3 @@
-import AsyncAlertsPage from './AsyncAlertsPage'
+import AsyncDemoPage from './AsyncDemoPage'
 
-export default AsyncAlertsPage
+export default AsyncDemoPage
