@@ -2,6 +2,7 @@
 const { ApolloServer } = require('apollo-server')
 const typeDefs = require('./schema')
 const PageAPI = require('./datasources/page')
+const SequenceAPI = require('./datasources/sequence')
 const resolvers = require('./resolvers')
 
 const server = new ApolloServer({
@@ -9,6 +10,7 @@ const server = new ApolloServer({
   resolvers,
   dataSources: () => ({
     pageAPI: new PageAPI(),
+    SequenceAPI: new SequenceAPI(),
   }),
 })
 

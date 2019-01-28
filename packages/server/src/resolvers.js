@@ -2,6 +2,21 @@ const { paginateResults } = require('./utils')
 
 module.exports = {
   Query: {
+    sequences: async (_, { pageSize = 20, after }, { dataSources }) => {
+      const allSequences = await dataSources.SequenceAPI.getAllSequences()
+
+      const sequences = paginateResults({
+        after,
+        pageSize,
+        results: allSequences,
+      })
+
+      return {
+        sequences,
+        cursor: sequences.length ? sequences[sequences.length - 1].cursor : null,
+        hasMore: sequences.length ? sequences[sequences.length - 1].cursor !== allSequences[allSequences.length - 1].cursor : false,
+      }
+    },
     pages: async (_, { pageSize = 20, after }, { dataSources }) => {
       const allPages = await dataSources.pageAPI.getAllPages()
 

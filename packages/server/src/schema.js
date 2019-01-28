@@ -4,6 +4,7 @@ const typeDefs = gql`
   type Query {
     pages(pageSize: Int, after: String): PageConnection!
     page(id: String!): Page
+    sequences(pageSize: Int, after: String): SequenceConnection!
   }
 
   type PageConnection {
@@ -12,9 +13,19 @@ const typeDefs = gql`
     pages: [Page]!
   }
 
+  type SequenceConnection {
+    cursor: String!
+    hasMore: Boolean!
+    sequences: [Sequence]!
+  }
+
   type Page {
     id: String!
     name: String!
+  }
+
+  type Sequence {
+    value: [Int]!
   }
 `
 module.exports = typeDefs
