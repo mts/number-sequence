@@ -3,7 +3,7 @@ import DemoTemplate from './DemoTemplate'
 
 const page = {
   page: {
-    id: 'alerts',
+    id: 'demo',
     name: 'some-name',
   },
 }

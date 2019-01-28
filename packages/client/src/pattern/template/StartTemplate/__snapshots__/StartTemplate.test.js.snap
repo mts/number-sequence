@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StartTemplate /> Snaphot must match startTemplateDefault 1`] = `
+<div>
+  <div
+    className="bg-gray-dark"
+    style={
+      Object {
+        "left": 0,
+        "position": "sticky",
+        "right": 0,
+        "top": 0,
+        "zIndex": 101,
+      }
+    }
+  >
+    <div
+      className="main-nav d-flex flex-justify-between px-3 pl-md-4 pr-md-4 py-3 box-shadow bg-gray-dark Details js-details-container"
+    >
+      <div
+        className="d-flex flex-self-center flex-lg-auto mr-lg-2"
+      >
+        <div
+          className="flex-self-center Details-content--shown"
+        >
+          <div
+            className="dropdown js-menu-container js-select-menu"
+          >
+            <h1
+              className="h4 text-normal"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                className="btn-link text-white link-white no-underline js-menu-target"
+                type="button"
+              >
+                Number Sequence
+              </button>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="d-flex flex-wrap flex-lg-nowrap"
+  >
+    <nav
+      className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pb-4"
+      data-pjax=""
+      id="navigation"
+    >
+      <ul
+        className="list-style-none"
+      >
+        <li
+          className="px-4 my-4"
+        >
+          <span
+            className="position-relative f4 d-block text-gray-dark"
+          >
+            Go To
+          </span>
+          <ul
+            className="pt-2 list-style-none"
+          >
+            <li
+              className=""
+            >
+              <div />
+            </li>
+          </ul>
+        </li>
+        <li
+          className="mt-4 border-bottom"
+        />
+      </ul>
+    </nav>
+    <div
+      className="md-order-1 d-flex flex-lg-column flex-auto flex-wrap"
+    >
+      <div
+        className="flex-row width-full bg-blue py-3 py-lg-6"
+      >
+        <div
+          className="main-content mx-auto py-4 px-3 px-md-6 px-lg-3 text-white"
+        >
+          <div
+            className=""
+          >
+            <h1
+              className="f000-light mb-4"
+            >
+              Number Sequences
+            </h1>
+            <div
+              className="f2-light pb-4"
+            >
+              A delightful demo
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-row main-content my-6 mx-auto px-3 px-md-6 px-lg-3"
+      />
+    </div>
+  </div>
+</div>
+`;
