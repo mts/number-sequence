@@ -11,3 +11,13 @@ export const PAGES = gql`
     }
   }
 `
+
+export const SEQUENCES = gql`
+  query GetSequences {
+    sequences(pageSize: 10) {
+      sequences {
+        numbers
+      }
+    }
+  }
+`
