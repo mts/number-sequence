@@ -9,7 +9,7 @@ class SequenceAPI extends RESTDataSource {
 
   sequenceReducer(sequence) {
     return {
-      value: sequence.value,
+      numbers: sequence.numbers,
     }
   }
 }

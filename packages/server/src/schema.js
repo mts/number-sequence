@@ -25,7 +25,7 @@ const typeDefs = gql`
   }
 
   type Sequence {
-    value: [Int]!
+    numbers: [Int]!
   }
 `
 module.exports = typeDefs
