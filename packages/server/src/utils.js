@@ -1,5 +1,5 @@
 /* eslint-disable */
-module.exports.paginateResults = ({ after: cursor, pageSize = 20, results, getCursor = () => null }) => {
+module.exports.paginateResults = ({ after: cursor, pageSize = 100, results, getCursor = () => null }) => {
   if (pageSize < 1) return []
 
   if (!cursor) return results.slice(0, pageSize)

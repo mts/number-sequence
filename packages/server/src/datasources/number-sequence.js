@@ -1,7 +1,5 @@
 /* eslint-disable */
-
 const sequenceSeedValue = 1
-const numberOfSequences = 20
 
 function addSequence(sequences) {
   const lastSequence = sequences[sequences.length - 1].numbers
@@ -34,38 +32,18 @@ function initSequences(sequenceSeedValue) {
   return [{ numbers: firstSequence }]
 }
 
-function extendSequences(sequences) {
-  for (let i = 0; i < numberOfSequences - 1; ++i) {
+function extendSequences(sequences, sequenceCount) {
+  for (let i = 0; i < sequenceCount - 1; i++) {
     addSequence(sequences)
   }
 
   return sequences
 }
 
-function consoleLogSequences(sequences) {
-  let padCharacter = ', '
-
-  for (let i = 0; i < sequences.length; ++i) {
-    const paddedSequence = ''.padStart(sequences.length - i, ' ').concat(sequences[i].join(padCharacter))
-    console.log(sequences[i].join(padCharacter))
-  }
-}
-
-function displaySequences(sequenceSeedValue) {
-  let sequences
-
-  sequences = initSequences(sequenceSeedValue)
-  sequences = extendSequences(sequences)
-
-  consoleLogSequences(sequences)
-}
-
-// displaySequences(sequenceSeedValue)
-
 module.exports = {
-  getSequences: function(sequenceSeedValue) {
+  getSequences: function(sequenceSeedValue, sequenceCount) {
     let sequences = initSequences(sequenceSeedValue)
-    return extendSequences(sequences)
+    return extendSequences(sequences, sequenceCount)
   },
 }
 /* eslint-enable */
