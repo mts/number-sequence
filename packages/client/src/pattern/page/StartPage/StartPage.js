@@ -1,12 +1,12 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { startPageRoute } from '../../../routes'
-import { PAGES } from '../../../graphql/query'
+import { pagesQuery } from '../../../graphql/query'
 import StartTemplate from '../../template/StartTemplate'
 
 const StartPage = () => {
   return (
-    <Query query={PAGES}>
+    <Query query={pagesQuery}>
       {({ data }) =>
         data.pages && data.pages.pages ? (
           <StartTemplate page={data.pages.pages.find(page => page.id === 'start')} startPageRoute={startPageRoute} />
