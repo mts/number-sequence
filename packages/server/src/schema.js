@@ -4,7 +4,7 @@ const typeDefs = gql`
   type Query {
     pages(pageSize: Int, after: String): PageConnection!
     page(id: String!): Page
-    sequences(pageSize: Int, after: String): SequenceConnection!
+    sequences(sequenceCount: Int, after: String): SequenceConnection!
   }
 
   type PageConnection {

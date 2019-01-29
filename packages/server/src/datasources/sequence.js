@@ -4,8 +4,8 @@ const { RESTDataSource } = require('apollo-datasource-rest')
 const { getSequences } = require('./number-sequence')
 
 class SequenceAPI extends RESTDataSource {
-  async getAllSequences() {
-    const sequences = getSequences(1)
+  async getAllSequences(sequenceCount) {
+    const sequences = getSequences(1, sequenceCount)
     return sequences && sequences.length ? sequences.map(l => this.sequenceReducer(l)) : []
   }
 

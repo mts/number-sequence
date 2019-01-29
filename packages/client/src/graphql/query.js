@@ -1,7 +1,7 @@
 /* eslint import/prefer-default-export: 0 */
 import gql from 'graphql-tag'
 
-export const PAGES = gql`
+export const pagesQuery = gql`
   query GetPages {
     pages(pageSize: 10) {
       pages {
@@ -12,12 +12,14 @@ export const PAGES = gql`
   }
 `
 
-export const SEQUENCES = gql`
-  query GetSequences {
-    sequences(pageSize: 10) {
-      sequences {
-        numbers
+export const getSequencesQuery = sequenceCount => {
+  return gql`
+    query GetSequences {
+      sequences(sequenceCount: ${sequenceCount}) {
+        sequences {
+          numbers
+        }
       }
     }
-  }
-`
+  `
+}
