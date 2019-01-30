@@ -8,3 +8,16 @@ Sequence.propTypes = {
 }
 
 export default Sequence
+
+/*
+`Sequence` is a
+  stateless function component
+  receiving `children` props
+`rendering`
+  its children
+
+Sample usage is as follows:
+```javascript
+  <Sequence>5</Sequence>
+```
+*/
