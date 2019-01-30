@@ -26,3 +26,22 @@ SequenceCard.propTypes = {
 }
 
 export default SequenceCard
+
+/*
+`SequenceCard` is a
+  stateless function component
+  receiving `sequences` props
+`rendering`
+  `Sequence` a component for each sequence.
+
+```javascript
+  const sequences = [
+    { numbers: [1] },
+    { numbers: [1, 1] },
+    { numbers: [1, 2, 1] },
+    { numbers: [1, 3, 3, 1] },
+    { numbers: [1, 4, 6, 4, 1] }
+  ]
+  <SequenceCard sequences={sequences} />
+```
+*/
