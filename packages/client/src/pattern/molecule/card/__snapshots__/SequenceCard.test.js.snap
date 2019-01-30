@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SequenceCard /> Snaphot must match sequenceCardDefault 1`] = `
+<div>
+  <div
+    className="d-flex flex-justify-center"
+  >
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+  </div>
+  <div
+    className="d-flex flex-justify-center"
+  >
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+  </div>
+  <div
+    className="d-flex flex-justify-center"
+  >
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      2
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+  </div>
+  <div
+    className="d-flex flex-justify-center"
+  >
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      3
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      3
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+  </div>
+  <div
+    className="d-flex flex-justify-center"
+  >
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      4
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      6
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      4
+    </div>
+    <div
+      className="px-3 border text-green border-blue"
+    >
+      1
+    </div>
+  </div>
+</div>
+`;
