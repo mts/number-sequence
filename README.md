@@ -98,6 +98,17 @@
 - `lint`: Runs the `lint` script for each package in the lerna mono-repo
 - `ci`: Runs the "ci" script for each package in the lerna mono-repo
 
+## Heroku Setup, Deployment and Monitoring
+- `Login`: `heroku login`
+- `Create app`: `heroku create number-sequence-server`
+- `Add remote`: `git remote add origin https://git.heroku.com/number-sequence-server.git`
+- `Set build pack 1`: `heroku buildpacks:set -a number-sequence-server https://github.com/Pagedraw/heroku-buildpack-select-subdir`
+- `Set build pack 2`: `heroku buildpacks:set https://github.com/heroku/heroku-buildpack-nodejs#v133 -a number-sequence-server`
+- `Configure build pack`: `heroku config:add BUILDPACK='packages/server=https://github.com/heroku/heroku-buildpack-nodejs#v133' -a number-sequence-server`
+- `Deploy`: `git push heroku master`
+- `Monitor`: `heroku logs --tail`
+- `Check app`: https://number-sequence-server.herokuapp.com/
+
 ## Environment variables
 
 ### Client App
