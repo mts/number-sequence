@@ -12,6 +12,16 @@ exports[`<DemoTemplate /> Snaphot must match demoTemplateDefault 1`] = `
       align="center"
       className="p-4"
     >
+      <button
+        onClick={[Function]}
+      >
+        More Sequences
+      </button>
+    </div>
+    <div
+      align="center"
+      className="p-4"
+    >
       <div />
     </div>
   </div>
