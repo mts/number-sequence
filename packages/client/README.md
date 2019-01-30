@@ -9,3 +9,7 @@
 ## Scripts
 
 - `npm start` starts Apollo GraphQL Client
+
+- Apollo GraphQL Client runs
+  - for `development` at `http://localhost:8080/`
+  - for `production` at `https://mts.github.io/number-sequence/`
