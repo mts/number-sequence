@@ -5,7 +5,7 @@ const { getSequences } = require('./number-sequence')
 
 class SequenceAPI extends RESTDataSource {
   async getAllSequences(sequenceCount) {
-    const sequences = getSequences(1, sequenceCount)
+    const sequences = getSequences({ sequenceSeedValue: 1, sequenceCount })
     return sequences && sequences.length ? sequences.map(l => this.sequenceReducer(l)) : []
   }
 
