@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Snaphot must match headerDefault 1`] = `
+<div
+  className="bg-gray-dark"
+  style={
+    Object {
+      "left": 0,
+      "position": "sticky",
+      "right": 0,
+      "top": 0,
+      "zIndex": 101,
+    }
+  }
+>
+  <div
+    className="main-nav d-flex flex-justify-between px-3 pl-md-4 pr-md-4 py-3 box-shadow bg-gray-dark Details js-details-container"
+  >
+    <div
+      className="d-flex flex-self-center flex-lg-auto mr-lg-2"
+    >
+      <div
+        className="flex-self-center Details-content--shown"
+      >
+        <div
+          className="dropdown js-menu-container js-select-menu"
+        >
+          <h1
+            className="h4 text-normal"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              className="btn-link text-white link-white no-underline js-menu-target"
+              type="button"
+            >
+              some text
+            </button>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
