@@ -37,25 +37,29 @@
 ## Features
 
 - Displays the following 5 number sequences by default
+
 ```
-  [1]
-  [1, 1]
-  [1, 2, 1]
-  [1, 3, 3, 1]
-  [1, 4, 6, 4, 1]
+                                                 [1]
+                                                [1, 1]
+                                              [1, 2, 1]
+                                             [1, 3, 3, 1]
+                                           [1, 4, 6, 4, 1]
 ```
+
 - Display the following 10 number sequences afterwards
+
 ```
-  [1, 5, 10, 10, 5, 1]
-  [1, 6, 15, 20, 15, 6, 1]
-  [1, 7, 21, 35, 35, 21, 7, 1]
-  [1, 8, 28, 56, 70, 56, 28, 8, 1]
-  [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
-  [1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1]
-  [1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, 1]
-  [1, 12, 66, 220, 495, 792, 924, 792, 495, 220, 66, 12, 1]
-  [1, 13, 78, 286, 715, 1287, 1716, 1716, 1287, 715, 286, 78, 13, 1]
-  [1, 14, 91, 364, 1001, 2002, 3003, 3432, 3003, 2002, 1001, 364, 91, 14, 1]
+                                         [1, 5, 10, 10, 5, 1]
+                                       [1, 6, 15, 20, 15, 6, 1]
+                                     [1, 7, 21, 35, 35, 21, 7, 1]
+                                   [1, 8, 28, 56, 70, 56, 28, 8, 1]
+                                [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
+                           [1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1]
+                         [1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, 1]
+                      [1, 12, 66, 220, 495, 792, 924, 792, 495, 220, 66, 12, 1]
+                  [1, 13, 78, 286, 715, 1287, 1716, 1716, 1287, 715, 286, 78, 13, 1]
+              [1, 14, 91, 364, 1001, 2002, 3003, 3432, 3003, 2002, 1001, 364, 91, 14, 1]
+
 ```
 
 ## Stack & patterns
@@ -83,6 +87,7 @@
 - Deploys client app to [GitHub pages](https://mts.github.io/number-sequence/) and server app to [Heroku](https://dashboard.heroku.com/apps/number-sequence-server)
 
 ## Available Scripts
+
 - `build`: Runs the `build` script for each package in the lerna mono-repo
 - `release`: Publishes all packages to NPM
 - `uninstall-packages`: Runs the `uninstall-packages` script for each package in the lerna mono-repo
@@ -101,6 +106,7 @@
 - `ci`: Runs the "ci" script for each package in the lerna mono-repo
 
 ## Heroku Setup, Deployment and Monitoring
+
 - `Login`: `heroku login`
 - `Create app`: `heroku create number-sequence-server`
 - `Add remote`: `git remote add origin https://git.heroku.com/number-sequence-server.git`
@@ -114,7 +120,9 @@
 ## Environment variables
 
 ### Client App
+
 - env.develop when building with webpack-dev-server for development
+
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
   - SERVER_URL=`http://localhost:4000/graphql`
 
@@ -124,6 +132,7 @@
   - SERVER_URL=`https://number-sequence-server.herokuapp.com/graphql`
 
 ### Server App
+
 - .env
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
 
@@ -132,55 +141,106 @@
 ### Atoms
 
 #### Atoms > Action > Button
+
 - `Button` is a
   stateless function component
   receiving `onClick, children` props
-`rendering`
+  `rendering`
   a button element.
 
 ```javascript
-  <Button onClick={() => {}}>some text</Button>
+<Button onClick={() => {}}>some text</Button>
 ```
 
 #### Atoms > Box > Sequence
+
 - `Sequence` is a
   stateless function component
   receiving `children` props
-`rendering`
+  `rendering`
   its children.
 
 ```javascript
-  <Sequence>5</Sequence>
+<Sequence>5</Sequence>
 ```
 
 #### Atoms > error > ErrorBoundary
+
 - `ErrorBoundary` is a
   stateful class component
   receiving `children` props
-`rendering`
+  `rendering`
   a fallback UI in case a JavaScript error is caught and
   it's children if not.
 
 ```javascript
-  <ErrorBoundary>
-    <SomeComponent />
-  </ErrorBoundary>
+<ErrorBoundary>
+  <SomeComponent />
+</ErrorBoundary>
 ```
 
 ### Molecules
 
 #### Molecules > Banner > HeroBanner
 
+- `HeroBanner` is a
+  stateless function component
+  receiving `children` props
+  `rendering`
+  its children.
+
+```javascript
+<HeroBanner>
+  <SomeComponent />
+</HeroBanner>
+```
+
 #### Molecules > Card > SequenceCard
+
+- `SequenceCard` is a
+  stateless function component
+  receiving `sequences` props
+  `rendering`
+  `Sequence` a component for each sequence.
+
+```javascript
+  const sequences = [
+    { numbers: [1] },
+    { numbers: [1, 1] },
+    { numbers: [1, 2, 1] },
+    { numbers: [1, 3, 3, 1] },
+    { numbers: [1, 4, 6, 4, 1] }
+  ]
+  <SequenceCard sequences={sequences} />
+```
 
 #### Molecules > Navigation > Header
 
+- `Header` is a
+  stateless function component
+  receiving `children` props
+  `rendering`
+  its children.
+
+```javascript
+<Header>some text</Header>
+```
+
 #### Molecules > Navigation > SideBar
 
+- `SideBar` is a
+  stateless function component
+  receiving no props
+  `rendering`
+  a Link component pointing to the demo page route.
+
+```javascript
+<SideBar />
+```
 
 ### Organisms
 
-#### There are no organisms
+#### There are no organisms applicable for this demo
 
 ### Templates
 
@@ -194,11 +254,12 @@
 
 #### Pages > StartPage
 
-
 ## Client
+
 - Apollo GraphQL Client running at https://mts.github.io/number-sequence/
 
 ## Server
+
 - Apollo GraphQL Server running at https://number-sequence-server.herokuapp.com/
 
 ## License
