@@ -29,3 +29,19 @@ ErrorBoundary.propTypes = {
 }
 
 export default ErrorBoundary
+
+/*
+`ErrorBoundary` is a
+  stateful class component
+  receiving `children` props
+`rendering`
+  a fallback UI in case a JavaScript error is caught and
+  it's children if not
+
+Sample usage is as follows:
+```javascript
+  <ErrorBoundary>
+    <SomeComponent />
+  </ErrorBoundary>
+```
+*/
