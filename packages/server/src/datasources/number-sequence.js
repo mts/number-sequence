@@ -41,7 +41,7 @@ function extendSequences(sequences, sequenceCount) {
 }
 
 module.exports = {
-  getSequences: function(sequenceSeedValue, sequenceCount) {
+  getSequences: function({ sequenceSeedValue = 1, sequenceCount = 5 }) {
     let sequences = initSequences(sequenceSeedValue)
     return extendSequences(sequences, sequenceCount)
   },
