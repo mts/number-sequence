@@ -245,15 +245,16 @@
 ### Templates
 
 #### Templates > DemoTemplate
+
 - `DemoTemplate` is a
   stateful class component
   receiving `page, startPageRoute` props
-`rendering`
+  `rendering`
   page name,
   a Link component pointing to the start page route,
   a Button component to display more sequences and
   a `SequenceCard` component
-`querying`
+  `querying`
   sequence data.
 
 ```javascript
@@ -268,11 +269,11 @@
 ```
 
 #### Templates > StartTemplate
-- /*
-`StartPage` is a
+
+- `StartPage` is a
   stateless function component
   receiving no props
-`rendering`
+  `rendering`
   `Header`, `SideBar` and `HeroBanner` components.
 
 ```javascript
@@ -289,29 +290,31 @@
 ### Pages
 
 #### Pages > DemoPage
+
 - `DemoPage` is a
   stateless function component
   receiving no props
-`rendering`
+  `rendering`
   a `DemoTemplate` component
-`querying`
+  `querying`
   page data.
 
 ```javascript
-  <DemoPage />
+<DemoPage />
 ```
 
 #### Pages > StartPage
+
 - `StartPage` is a
   stateless function component
   receiving no props
-`rendering`
+  `rendering`
   a `StartTemplate` component
-`querying`
+  `querying`
   page data.
 
 ```javascript
-  <StartPage />
+<StartPage />
 ```
 
 ## License
