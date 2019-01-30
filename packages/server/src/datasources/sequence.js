@@ -1,6 +1,5 @@
 /* eslint class-methods-use-this: 0 */
 const { RESTDataSource } = require('apollo-datasource-rest')
-// const { sequences } = require('./data.json')
 const { getSequences } = require('./number-sequence')
 
 class SequenceAPI extends RESTDataSource {
