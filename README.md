@@ -60,24 +60,24 @@
 
 ## Stack & patterns
 - Number Sequences application
-  - Lives in a Lerna mono-repo
-  - Implements an Apollo GraphQL Client and an Apollo GraphQL Server
-  - Renders UI using ReactJS
-  - Implements client routing using React Router
-  - Uses Atomic Design implementing UI components as atoms, molecules, organisms, templates and pages
-  - Queries server as well as client data using GraphQL
-  - Integrates ReactJS with Apollo GraphQL Client using React Apollo
-  - Styles using Primer
-  - Lints using EsLint and StyleLint
-  - Runs linters on git staged files using lint-staged
-  - Prettifies using Prettier
-  - Implements unit and snapshot tests using Jest and Enzyme
-  - Implements Git hooks using husky
-  - Compiles JavaScript and CSS bundles using Webpack and Babel
-  - Allows local development using webpack-dev-server
-  - Publishes to NPM
-  - Builds using Travis-CI
-  - Deploys client to GitHub pages and server to Heroku
+  - Lives in a [Lerna](https://github.com/lerna/lerna) mono-repo
+  - Implements an [Apollo GraphQL Client](https://github.com/apollographql/apollo-client) and an [Apollo GraphQL Server](https://github.com/apollographql/apollo-server)
+  - Renders UI using [ReactJS](https://github.com/facebook/react)
+  - Implements client routing using [React Router](https://github.com/ReactTraining/react-router)
+  - Uses [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) implementing UI components as atoms, molecules, organisms, templates and pages
+  - Queries server as well as client data using [GraphQL](https://graphql.org/)
+  - Integrates [ReactJS](https://github.com/facebook/react) with [Apollo GraphQL Client](https://github.com/apollographql/apollo-client) using [React Apollo](https://github.com/apollographql/react-apollo)
+  - Styles using [Primer](https://github.com/primer/primer)
+  - Lints using [ESLint](https://github.com/eslint/eslint) and [StyleLint](https://github.com/stylelint/stylelint)
+  - Runs linters on git staged files using [Lint Staged](https://github.com/okonet/lint-staged)
+  - Prettifies using [Prettier](https://github.com/prettier/prettier)
+  - Implements unit and snapshot tests using [Jest](https://jestjs.io/), [Enzyme](https://github.com/airbnb/enzyme) and [React Test Renderer](https://github.com/facebook/react/tree/master/packages/react-test-renderer)
+  - Implements Git hooks using [Husky](https://github.com/typicode/husky)
+  - Compiles JavaScript and CSS bundles using [Webpack](https://github.com/webpack/webpack) and [Babel](https://github.com/babel/babel)
+  - Allows local development using [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
+  - Publishes [client package](https://www.npmjs.com/package/number-sequence-client) and [server package](https://www.npmjs.com/package/number-sequence-server) ]to [NPM](https://www.npmjs.com/)
+  - Builds using [Travis-CI](https://travis-ci.org/mts/number-sequence)
+  - Deploys client app to [GitHub pages](https://mts.github.io/number-sequence/) and server app to [Heroku](https://dashboard.heroku.com/apps/number-sequence-server)
 
 ## Available Scripts
 - "build": Runs the "build" script for each package in the lerna mono-repo
