@@ -75,27 +75,27 @@
   - Implements Git hooks using [Husky](https://github.com/typicode/husky)
   - Compiles JavaScript and CSS bundles using [Webpack](https://github.com/webpack/webpack) and [Babel](https://github.com/babel/babel)
   - Allows local development using [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
-  - Publishes [client package](https://www.npmjs.com/package/number-sequence-client) and [server package](https://www.npmjs.com/package/number-sequence-server) ]to [NPM](https://www.npmjs.com/)
+  - Publishes [client package](https://www.npmjs.com/package/number-sequence-client) and [server package](https://www.npmjs.com/package/number-sequence-server) to [NPM](https://www.npmjs.com/)
   - Builds using [Travis-CI](https://travis-ci.org/mts/number-sequence)
   - Deploys client app to [GitHub pages](https://mts.github.io/number-sequence/) and server app to [Heroku](https://dashboard.heroku.com/apps/number-sequence-server)
 
 ## Available Scripts
-- "build": Runs the "build" script for each package in the lerna mono-repo
-- "release": Publishes all packages to NPM
-- "uninstall-packages": Runs the "uninstall-packages" script for each package in the lerna mono-repo
-- "install-packages": Runs the "install-packages" script for each package in the lerna mono-repo
-- "reinstall-packages": Runs the "reinstall-packages" script for each package in the lerna mono-repo
-- "heroku-prebuild": Heroku runs this script before installing dependencies
-- "start": Runs the "start" script for each package in the lerna mono-repo. Heroku runs this script to start the Apollo GraphQL Server
-- "heroku-postbuild": Heroku runs this script ending up intalling all dependencies of each package in the lerna mono-repo
-- "deploy-client": Deploys "packages/client/build" as a static website to GitHub pages
-- "deploy": Run "build" script for each package building the server and the client. Deploys client to GitHub Pages afterwards
-- "test": Runs the "test" script for each package in the lerna mono-repo
-- "prettier-js-init": Prettifies all JavaScript using Prettier
-- "pretty-quick": Prettifies all JavaScript using pretty-quick
-- "eslint-js-init": Initiates EsLint configuration
-- "lint": Runs the "lint" script for each package in the lerna mono-repo
-- "ci": Runs the "ci" script for each package in the lerna mono-repo
+- `build`: Runs the `build` script for each package in the lerna mono-repo
+- `release`: Publishes all packages to NPM
+- `uninstall-packages`: Runs the `uninstall-packages` script for each package in the lerna mono-repo
+- `install-packages`: Runs the `install-packages` script for each package in the lerna mono-repo
+- `reinstall-packages`: Runs the `reinstall-packages` script for each package in the lerna mono-repo
+- `heroku-prebuild`: Heroku runs this script before installing dependencies
+- `start`: Runs the `start` script for each package in the lerna mono-repo. Heroku runs this script to start the Apollo GraphQL Server
+- `heroku-postbuild`: Heroku runs this script ending up intalling all dependencies of each package in the lerna mono-repo
+- `deploy-client`: Deploys `packages/client/build` as a static website to GitHub pages
+- `deploy`: Run `build` script for each package building the server and the client. Deploys client to GitHub Pages afterwards
+- `test`: Runs the `test` script for each package in the lerna mono-repo
+- `prettier-js-init`: Prettifies all JavaScript using Prettier
+- `pretty-quick`: Prettifies all JavaScript using pretty-quick
+- `eslint-js-init`: Initiates EsLint configuration
+- `lint`: Runs the `lint` script for each package in the lerna mono-repo
+- `ci`: Runs the "ci" script for each package in the lerna mono-repo
 
 ## Components
 
