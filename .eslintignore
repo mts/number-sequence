@@ -1,5 +1,8 @@
+README.md
 node_modules
 packages/client/build
 packages/client/node_modules
+packages/client/README.md
 packages/server/build
 packages/server/node_modules
+packages/server/README.md
