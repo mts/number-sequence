@@ -1,6 +1,6 @@
 {
   "name": "number-sequence-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Number Sequence Server",
   "main": "index.js",
   "license": "MIT",
