@@ -41,3 +41,15 @@ Header.propTypes = {
 }
 
 export default Header
+
+/*
+`Header` is a
+  stateless function component
+  receiving `children` props
+`rendering`
+  its children.
+
+```javascript
+  <Header>some text</Header>
+```
+*/
