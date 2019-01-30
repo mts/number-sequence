@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sequence /> Snaphot must match sequenceDefault 1`] = `
+<div
+  className="px-3 border text-green border-blue"
+>
+  5
+</div>
+`;
