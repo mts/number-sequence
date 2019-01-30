@@ -123,7 +123,7 @@
 - `Monitor`: `heroku logs --tail`
 - `Check app`: `https://number-sequence-server.herokuapp.com/`
 
-## Environment variables
+## Environment Variables
 
 ### Client App
 
