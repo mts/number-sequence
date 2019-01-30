@@ -36,9 +36,8 @@ export default ErrorBoundary
   receiving `children` props
 `rendering`
   a fallback UI in case a JavaScript error is caught and
-  it's children if not
+  it's children if not.
 
-Sample usage is as follows:
 ```javascript
   <ErrorBoundary>
     <SomeComponent />

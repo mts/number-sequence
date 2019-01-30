@@ -14,9 +14,8 @@ export default Sequence
   stateless function component
   receiving `children` props
 `rendering`
-  its children
+  its children.
 
-Sample usage is as follows:
 ```javascript
   <Sequence>5</Sequence>
 ```

@@ -19,9 +19,8 @@ export default Button
   stateless function component
   receiving `onClick, children` props
 `rendering`
-  a button element
+  a button element.
 
-Sample usage is as follows:
 ```javascript
   <Button onClick={() => {}}>some text</Button>
 ```
