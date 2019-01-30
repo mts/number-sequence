@@ -21,3 +21,17 @@ HeroBanner.propTypes = {
 }
 
 export default HeroBanner
+
+/*
+`HeroBanner` is a
+  stateless function component
+  receiving `children` props
+`rendering`
+  its children.
+
+```javascript
+  <HeroBanner>
+    <SomeComponent />
+  </HeroBanner>
+```
+*/
