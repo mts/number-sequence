@@ -55,3 +55,27 @@ DemoTemplate.propTypes = {
 }
 
 export default DemoTemplate
+
+/*
+`DemoTemplate` is a
+  stateful class component
+  receiving `page, startPageRoute` props
+`rendering`
+  page name,
+  a Link component pointing to the start page route,
+  a Button component to display more sequences and
+  a `SequenceCard` component
+`querying`
+  sequence data.
+
+```javascript
+  const page = {
+    page: {
+      id: 'demo',
+      name: 'some-name',
+    },
+  }
+
+  <DemoTemplate page={page} startPageRoute="/" />
+```
+*/

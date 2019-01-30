@@ -26,3 +26,22 @@ const StartPage = () => {
 }
 
 export default StartPage
+
+/*
+`StartPage` is a
+  stateless function component
+  receiving no props
+`rendering`
+  `Header`, `SideBar` and `HeroBanner` components.
+
+```javascript
+  const page = {
+    page: {
+      id: 'start',
+      name: 'some-name',
+    },
+  }
+
+  <StartTemplate page={page} startPageRoute="/" />
+```
+*/

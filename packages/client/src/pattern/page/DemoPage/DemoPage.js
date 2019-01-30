@@ -17,3 +17,17 @@ const DemoPage = () => {
 }
 
 export default DemoPage
+
+/*
+`DemoPage` is a
+  stateless function component
+  receiving no props
+`rendering`
+  a `DemoTemplate` component
+`querying`
+  page data.
+
+```javascript
+  <DemoPage />
+```
+*/

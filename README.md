@@ -121,19 +121,19 @@
 
 ### Client App
 
-- env.develop when building with webpack-dev-server for development
+- `.env.develop` when building with webpack-dev-server for development
 
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
   - SERVER_URL=`http://localhost:4000/graphql`
 
-- env.release when building with webpack for production
+- `.env.release` when building with webpack for production
   - BASE_URL=/number-sequence
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
   - SERVER_URL=`https://number-sequence-server.herokuapp.com/graphql`
 
 ### Server App
 
-- .env
+- `.env`
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
 
 ## Components
@@ -240,27 +240,79 @@
 
 ### Organisms
 
-#### There are no organisms applicable for this demo
+> There are no organisms applicable for this demo
 
 ### Templates
 
 #### Templates > DemoTemplate
+- `DemoTemplate` is a
+  stateful class component
+  receiving `page, startPageRoute` props
+`rendering`
+  page name,
+  a Link component pointing to the start page route,
+  a Button component to display more sequences and
+  a `SequenceCard` component
+`querying`
+  sequence data.
+
+```javascript
+  const page = {
+    page: {
+      id: 'demo',
+      name: 'some-name',
+    },
+  }
+
+  <DemoTemplate page={page} startPageRoute="/" />
+```
 
 #### Templates > StartTemplate
+- /*
+`StartPage` is a
+  stateless function component
+  receiving no props
+`rendering`
+  `Header`, `SideBar` and `HeroBanner` components.
+
+```javascript
+  const page = {
+    page: {
+      id: 'start',
+      name: 'some-name',
+    },
+  }
+
+  <StartTemplate page={page} startPageRoute="/" />
+```
 
 ### Pages
 
 #### Pages > DemoPage
+- `DemoPage` is a
+  stateless function component
+  receiving no props
+`rendering`
+  a `DemoTemplate` component
+`querying`
+  page data.
+
+```javascript
+  <DemoPage />
+```
 
 #### Pages > StartPage
+- `StartPage` is a
+  stateless function component
+  receiving no props
+`rendering`
+  a `StartTemplate` component
+`querying`
+  page data.
 
-## Client
-
-- Apollo GraphQL Client running at https://mts.github.io/number-sequence/
-
-## Server
-
-- Apollo GraphQL Server running at https://number-sequence-server.herokuapp.com/
+```javascript
+  <StartPage />
+```
 
 ## License
 

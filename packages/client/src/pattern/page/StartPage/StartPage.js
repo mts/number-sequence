@@ -17,3 +17,17 @@ const StartPage = () => {
 }
 
 export default StartPage
+
+/*
+`StartPage` is a
+  stateless function component
+  receiving no props
+`rendering`
+  a `StartTemplate` component
+`querying`
+  page data.
+
+```javascript
+  <StartPage />
+```
+*/
