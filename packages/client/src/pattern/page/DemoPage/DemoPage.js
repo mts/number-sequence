@@ -28,6 +28,6 @@ export default DemoPage
   page data.
 
 ```javascript
-  <DemoPage />
+<DemoPage />
 ```
 */

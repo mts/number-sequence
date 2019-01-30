@@ -28,6 +28,6 @@ export default StartPage
   page data.
 
 ```javascript
-  <StartPage />
+<StartPage />
 ```
 */

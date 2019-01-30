@@ -4,7 +4,7 @@ import SideBar from '../../molecule/navigation/SideBar'
 import HeroBanner from '../../molecule/banner/HeroBanner'
 import { version } from '../../../../../../lerna.json'
 
-const StartPage = () => {
+const StartTemplate = () => {
   window.scrollTo({
     top: 0,
     left: 0,
@@ -25,23 +25,23 @@ const StartPage = () => {
   )
 }
 
-export default StartPage
+export default StartTemplate
 
 /*
-`StartPage` is a
+`StartTemplate` is a
   stateless function component
   receiving no props
 `rendering`
   `Header`, `SideBar` and `HeroBanner` components.
 
 ```javascript
-  const page = {
-    page: {
-      id: 'start',
-      name: 'some-name',
-    },
-  }
+const page = {
+  page: {
+    id: 'start',
+    name: 'some-name',
+  },
+}
 
-  <StartTemplate page={page} startPageRoute="/" />
+<StartTemplate page={page} startPageRoute="/" />
 ```
 */

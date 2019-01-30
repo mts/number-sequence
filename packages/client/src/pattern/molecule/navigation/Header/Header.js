@@ -50,6 +50,6 @@ export default Header
   its children.
 
 ```javascript
-  <Header>some text</Header>
+<Header>some text</Header>
 ```
 */

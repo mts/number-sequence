@@ -148,7 +148,7 @@
   `rendering`
   a button element.
 
-```javascript
+- ```javascript
 <Button onClick={() => {}}>some text</Button>
 ```
 
@@ -160,7 +160,7 @@
   `rendering`
   its children.
 
-```javascript
+- ```javascript
 <Sequence>5</Sequence>
 ```
 
@@ -173,7 +173,7 @@
   a fallback UI in case a JavaScript error is caught and
   it's children if not.
 
-```javascript
+- ```javascript
 <ErrorBoundary>
   <SomeComponent />
 </ErrorBoundary>
@@ -189,7 +189,7 @@
   `rendering`
   its children.
 
-```javascript
+- ```javascript
 <HeroBanner>
   <SomeComponent />
 </HeroBanner>
@@ -203,15 +203,15 @@
   `rendering`
   `Sequence` a component for each sequence.
 
-```javascript
-  const sequences = [
-    { numbers: [1] },
-    { numbers: [1, 1] },
-    { numbers: [1, 2, 1] },
-    { numbers: [1, 3, 3, 1] },
-    { numbers: [1, 4, 6, 4, 1] }
-  ]
-  <SequenceCard sequences={sequences} />
+- ```javascript
+const sequences = [
+  { numbers: [1] },
+  { numbers: [1, 1] },
+  { numbers: [1, 2, 1] },
+  { numbers: [1, 3, 3, 1] },
+  { numbers: [1, 4, 6, 4, 1] }
+]
+<SequenceCard sequences={sequences} />
 ```
 
 #### Molecules > Navigation > Header
@@ -222,7 +222,7 @@
   `rendering`
   its children.
 
-```javascript
+- ```javascript
 <Header>some text</Header>
 ```
 
@@ -234,7 +234,7 @@
   `rendering`
   a Link component pointing to the demo page route.
 
-```javascript
+- ```javascript
 <SideBar />
 ```
 
@@ -257,15 +257,15 @@
   `querying`
   sequence data.
 
-```javascript
-  const page = {
-    page: {
-      id: 'demo',
-      name: 'some-name',
-    },
-  }
+- ```javascript
+const page = {
+  page: {
+    id: 'demo',
+    name: 'some-name',
+  },
+}
 
-  <DemoTemplate page={page} startPageRoute="/" />
+<DemoTemplate page={page} startPageRoute="/" />
 ```
 
 #### Templates > StartTemplate
@@ -276,15 +276,15 @@
   `rendering`
   `Header`, `SideBar` and `HeroBanner` components.
 
-```javascript
-  const page = {
-    page: {
-      id: 'start',
-      name: 'some-name',
-    },
-  }
+- ```javascript
+const page = {
+  page: {
+    id: 'start',
+    name: 'some-name',
+  },
+}
 
-  <StartTemplate page={page} startPageRoute="/" />
+<StartTemplate page={page} startPageRoute="/" />
 ```
 
 ### Pages
@@ -299,7 +299,7 @@
   `querying`
   page data.
 
-```javascript
+- ```javascript
 <DemoPage />
 ```
 
@@ -313,7 +313,7 @@
   `querying`
   page data.
 
-```javascript
+- ```javascript
 <StartPage />
 ```
 

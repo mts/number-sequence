@@ -22,6 +22,6 @@ export default Button
   a button element.
 
 ```javascript
-  <Button onClick={() => {}}>some text</Button>
+<Button onClick={() => {}}>some text</Button>
 ```
 */

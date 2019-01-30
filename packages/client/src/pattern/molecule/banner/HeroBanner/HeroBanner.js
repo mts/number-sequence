@@ -30,8 +30,8 @@ export default HeroBanner
   its children.
 
 ```javascript
-  <HeroBanner>
-    <SomeComponent />
-  </HeroBanner>
+<HeroBanner>
+  <SomeComponent />
+</HeroBanner>
 ```
 */

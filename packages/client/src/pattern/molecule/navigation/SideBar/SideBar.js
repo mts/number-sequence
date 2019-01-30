@@ -44,6 +44,6 @@ export default SideBar
   a Link component pointing to the demo page route.
 
 ```javascript
-  <SideBar />
+<SideBar />
 ```
 */

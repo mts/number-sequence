@@ -69,13 +69,13 @@ export default DemoTemplate
   sequence data.
 
 ```javascript
-  const page = {
-    page: {
-      id: 'demo',
-      name: 'some-name',
-    },
-  }
+const page = {
+  page: {
+    id: 'demo',
+    name: 'some-name',
+  },
+}
 
-  <DemoTemplate page={page} startPageRoute="/" />
+<DemoTemplate page={page} startPageRoute="/" />
 ```
 */

@@ -17,6 +17,6 @@ export default Sequence
   its children.
 
 ```javascript
-  <Sequence>5</Sequence>
+<Sequence>5</Sequence>
 ```
 */

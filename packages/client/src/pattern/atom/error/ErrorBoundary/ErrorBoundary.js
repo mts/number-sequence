@@ -39,8 +39,8 @@ export default ErrorBoundary
   it's children if not.
 
 ```javascript
-  <ErrorBoundary>
-    <SomeComponent />
-  </ErrorBoundary>
+<ErrorBoundary>
+  <SomeComponent />
+</ErrorBoundary>
 ```
 */
