@@ -32,7 +32,10 @@
   </a>
 </p>
 
-> Display number sequences
+> Display incremental number sequences
+
+## App running on GitHub Pages
+**⚠️ Enable CORS using this [Chrome extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en) and toggle CORS on if necessary!**
 
 ## Features
 
@@ -270,7 +273,7 @@ const page = {
 
 #### Templates > StartTemplate
 
-> `StartPage` is a
+> `StartTemplate` is a
   stateless function component
   receiving no props
   `rendering`
