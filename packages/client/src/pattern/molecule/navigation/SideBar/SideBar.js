@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { demoPageRoute } from '../../../routes'
+import { demoPageRoute } from '../../../../routes'
 
 const SideBar = () => (
   <nav id="navigation" className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pb-4" data-pjax="">

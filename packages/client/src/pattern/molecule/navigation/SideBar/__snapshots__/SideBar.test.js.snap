@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideBar /> Snaphot must match sideBarDefault 1`] = `
+<nav
+  className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pb-4"
+  data-pjax=""
+  id="navigation"
+>
+  <ul
+    className="list-style-none"
+  >
+    <li
+      className="px-4 my-4"
+    >
+      <span
+        className="position-relative f4 d-block text-gray-dark"
+      >
+        Go To
+      </span>
+      <ul
+        className="pt-2 list-style-none"
+      >
+        <li
+          className=""
+        >
+          <div />
+        </li>
+      </ul>
+    </li>
+    <li
+      className="mt-4 border-bottom"
+    />
+  </ul>
+</nav>
+`;
