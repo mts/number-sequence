@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { Query } from 'react-apollo'
 import { getSequencesQuery } from '../../../graphql/query'
 import SequenceCard from '../../molecule/card/SequenceCard'
+import Button from '../../atom/action/Button'
 
 class DemoTemplate extends React.Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class DemoTemplate extends React.Component {
   render() {
     const { page, startPageRoute } = this.props
     const { sequenceCount, actionMessage } = this.state
+
     return (
       <div>
         <h1 align="center" className="p-4 text-red">
@@ -36,11 +38,7 @@ class DemoTemplate extends React.Component {
             {({ data }) => (data.sequences && data.sequences.sequences ? <SequenceCard sequences={data.sequences.sequences} /> : null)}
           </Query>
 
-          {sequenceCount < 20 ? (
-            <div align="center" className="p-4">
-              <button onClick={this.handleButtonOnClick}>{actionMessage}</button>
-            </div>
-          ) : null}
+          {sequenceCount < 20 ? <Button onClick={this.handleButtonOnClick}>{actionMessage}</Button> : null}
 
           <div align="center" className="p-4">
             <Link to={startPageRoute}>Back to Start Page</Link>

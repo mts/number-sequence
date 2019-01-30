@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Snaphot must match buttonDefault 1`] = `
+<div
+  align="center"
+  className="p-4"
+>
+  <button
+    onClick={[Function]}
+  >
+    some text
+  </button>
+</div>
+`;
