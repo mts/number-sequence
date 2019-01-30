@@ -34,15 +34,15 @@ class DemoTemplate extends React.Component {
           {page.name}
         </h1>
         <div>
-          <Query query={getSequencesQuery(sequenceCount)}>
-            {({ data }) => (data.sequences && data.sequences.sequences ? <SequenceCard sequences={data.sequences.sequences} /> : null)}
-          </Query>
-
-          {sequenceCount < 20 ? <Button onClick={this.handleButtonOnClick}>{actionMessage}</Button> : null}
-
           <div align="center" className="p-4">
             <Link to={startPageRoute}>Back to Start Page</Link>
           </div>
+
+          {sequenceCount < 20 ? <Button onClick={this.handleButtonOnClick}>{actionMessage}</Button> : null}
+
+          <Query query={getSequencesQuery(sequenceCount)}>
+            {({ data }) => (data.sequences && data.sequences.sequences ? <SequenceCard sequences={data.sequences.sequences} /> : null)}
+          </Query>
         </div>
       </div>
     )

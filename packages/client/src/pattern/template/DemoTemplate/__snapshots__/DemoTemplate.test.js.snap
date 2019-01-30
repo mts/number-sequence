@@ -7,7 +7,12 @@ exports[`<DemoTemplate /> Snaphot must match demoTemplateDefault 1`] = `
     className="p-4 text-red"
   />
   <div>
-    <div />
+    <div
+      align="center"
+      className="p-4"
+    >
+      <div />
+    </div>
     <div
       align="center"
       className="p-4"
@@ -18,12 +23,7 @@ exports[`<DemoTemplate /> Snaphot must match demoTemplateDefault 1`] = `
         More Sequences
       </button>
     </div>
-    <div
-      align="center"
-      className="p-4"
-    >
-      <div />
-    </div>
+    <div />
   </div>
 </div>
 `;
