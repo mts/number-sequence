@@ -32,7 +32,7 @@
   </a>
 </p>
 
-> Display mumber sequences
+> Display number sequences
 
 ## Features
 
