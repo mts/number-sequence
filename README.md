@@ -65,8 +65,8 @@
 ```
 
 > Sequence calculation logic is
-  - implemented in `packages/server/src/datasources/number-sequence.js` and
-  - tested in `packages/server/src/datasources/number-sequence.test.js`
+  - implemented [here](https://github.com/mts/number-sequence/blob/master/packages/server/src/datasources/number-sequence.js) and
+  - tested [here](https://github.com/mts/number-sequence/blob/master/packages/server/src/datasources/number-sequence.test.js)
 
 ## Stack & patterns
 
