@@ -87,7 +87,7 @@
 - `reinstall-packages`: Runs the `reinstall-packages` script for each package in the lerna mono-repo
 - `heroku-prebuild`: Heroku runs this script before installing dependencies
 - `start`: Runs the `start` script for each package in the lerna mono-repo. Heroku runs this script to start the Apollo GraphQL Server
-- `heroku-postbuild`: Heroku runs this script ending up intalling all dependencies of each package in the lerna mono-repo
+- `heroku-postbuild`: Heroku runs this script installing all dependencies of each package in the lerna mono-repo
 - `deploy-client`: Deploys `packages/client/build` as a static website to GitHub pages
 - `deploy`: Run `build` script for each package building the server and the client. Deploys client to GitHub Pages afterwards
 - `test`: Runs the `test` script for each package in the lerna mono-repo
@@ -108,7 +108,7 @@
 `rendering`
   a button element
 
-Sample usage is as follows:
+- Sample usage is as follows:
 ```javascript
   <Button onClick={() => {}}>some text</Button>
 ```
@@ -120,7 +120,7 @@ Sample usage is as follows:
 `rendering`
   its children
 
-Sample usage is as follows:
+- Sample usage is as follows:
 ```javascript
   <Sequence>5</Sequence>
 ```
@@ -133,7 +133,7 @@ Sample usage is as follows:
   a fallback UI in case a JavaScript error is caught and
   it's children if not
 
-Sample usage is as follows:
+- Sample usage is as follows:
 ```javascript
   <ErrorBoundary>
     <SomeComponent />
