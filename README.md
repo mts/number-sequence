@@ -142,7 +142,7 @@
 
 #### Atoms > Action > Button
 
-- `Button` is a
+> `Button` is a
   stateless function component
   receiving `onClick, children` props
   `rendering`
@@ -154,7 +154,7 @@
 
 #### Atoms > Box > Sequence
 
-- `Sequence` is a
+> `Sequence` is a
   stateless function component
   receiving `children` props
   `rendering`
@@ -166,7 +166,7 @@
 
 #### Atoms > error > ErrorBoundary
 
-- `ErrorBoundary` is a
+> `ErrorBoundary` is a
   stateful class component
   receiving `children` props
   `rendering`
@@ -183,7 +183,7 @@
 
 #### Molecules > Banner > HeroBanner
 
-- `HeroBanner` is a
+> `HeroBanner` is a
   stateless function component
   receiving `children` props
   `rendering`
@@ -197,7 +197,7 @@
 
 #### Molecules > Card > SequenceCard
 
-- `SequenceCard` is a
+> `SequenceCard` is a
   stateless function component
   receiving `sequences` props
   `rendering`
@@ -216,7 +216,7 @@ const sequences = [
 
 #### Molecules > Navigation > Header
 
-- `Header` is a
+> `Header` is a
   stateless function component
   receiving `children` props
   `rendering`
@@ -228,7 +228,7 @@ const sequences = [
 
 #### Molecules > Navigation > SideBar
 
-- `SideBar` is a
+> `SideBar` is a
   stateless function component
   receiving no props
   `rendering`
@@ -246,7 +246,7 @@ const sequences = [
 
 #### Templates > DemoTemplate
 
-- `DemoTemplate` is a
+> `DemoTemplate` is a
   stateful class component
   receiving `page, startPageRoute` props
   `rendering`
@@ -270,7 +270,7 @@ const page = {
 
 #### Templates > StartTemplate
 
-- `StartPage` is a
+> `StartPage` is a
   stateless function component
   receiving no props
   `rendering`
@@ -291,7 +291,7 @@ const page = {
 
 #### Pages > DemoPage
 
-- `DemoPage` is a
+> `DemoPage` is a
   stateless function component
   receiving no props
   `rendering`
@@ -305,7 +305,7 @@ const page = {
 
 #### Pages > StartPage
 
-- `StartPage` is a
+> `StartPage` is a
   stateless function component
   receiving no props
   `rendering`
