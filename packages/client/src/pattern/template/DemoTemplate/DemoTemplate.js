@@ -11,7 +11,7 @@ class DemoTemplate extends React.Component {
     super(props)
 
     this.state = {
-      sequenceCount: 10,
+      sequenceCount: 5,
       actionMessage: 'More Sequences',
     }
   }
@@ -20,7 +20,7 @@ class DemoTemplate extends React.Component {
     const { sequenceCount } = this.state
 
     this.setState({
-      sequenceCount: sequenceCount + 10,
+      sequenceCount: sequenceCount + 5,
     })
   }
 
