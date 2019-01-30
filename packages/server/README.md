@@ -9,3 +9,7 @@
 ## Scripts
 
 - `npm start` starts Apollo GraphQL Server
+
+- Apollo GraphQL Server runs
+  - for `development` at `http://localhost:4000/`
+  - for `production` at `https://number-sequence-server.herokuapp.com/`
