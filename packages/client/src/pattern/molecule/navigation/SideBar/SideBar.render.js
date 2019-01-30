@@ -1,12 +1,6 @@
 import React from 'react'
 import SideBar from './SideBar'
 
-const SomeComponent = () => <div />
-
-const sideBarDefault = (
-  <SideBar>
-    <SomeComponent />
-  </SideBar>
-)
+const sideBarDefault = <SideBar />
 
 export default sideBarDefault

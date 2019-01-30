@@ -35,3 +35,15 @@ const SideBar = () => (
 )
 
 export default SideBar
+
+/*
+`SideBar` is a
+  stateless function component
+  receiving no props
+`rendering`
+  a Link component pointing to the demo page route.
+
+```javascript
+  <SideBar />
+```
+*/
