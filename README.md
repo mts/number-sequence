@@ -62,6 +62,7 @@
 - Number Sequences application
   - Lives in a [Lerna](https://github.com/lerna/lerna) mono-repo
   - Implements an [Apollo GraphQL Client](https://github.com/apollographql/apollo-client) and an [Apollo GraphQL Server](https://github.com/apollographql/apollo-server)
+  - Uses [Apollo Engine](https://engine.apollographql.com/) as cloud service for schema management
   - Renders UI using [ReactJS](https://github.com/facebook/react)
   - Implements client routing using [React Router](https://github.com/ReactTraining/react-router)
   - Uses [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) implementing UI components as atoms, molecules, organisms, templates and pages
@@ -97,6 +98,22 @@
 - `lint`: Runs the `lint` script for each package in the lerna mono-repo
 - `ci`: Runs the "ci" script for each package in the lerna mono-repo
 
+## Environment variables
+
+### Client App
+- env.develop when building with webpack-dev-server for development
+  ENGINE_API_KEY=<APOLLO ENGINE API KEY>
+  SERVER_URL=http://localhost:4000/graphql
+
+- env.release when building with webpack for production
+  BASE_URL=/number-sequence
+  ENGINE_API_KEY=<APOLLO ENGINE API KEY>
+  SERVER_URL=https://number-sequence-server.herokuapp.com/graphql
+
+### Server App
+- .env
+  ENGINE_API_KEY=<APOLLO ENGINE API KEY>
+
 ## Components
 
 ### Atoms
@@ -106,9 +123,8 @@
   stateless function component
   receiving `onClick, children` props
 `rendering`
-  a button element
+  a button element.
 
-- Sample usage is as follows:
 ```javascript
   <Button onClick={() => {}}>some text</Button>
 ```
@@ -118,9 +134,8 @@
   stateless function component
   receiving `children` props
 `rendering`
-  its children
+  its children.
 
-- Sample usage is as follows:
 ```javascript
   <Sequence>5</Sequence>
 ```
@@ -131,9 +146,8 @@
   receiving `children` props
 `rendering`
   a fallback UI in case a JavaScript error is caught and
-  it's children if not
+  it's children if not.
 
-- Sample usage is as follows:
 ```javascript
   <ErrorBoundary>
     <SomeComponent />
