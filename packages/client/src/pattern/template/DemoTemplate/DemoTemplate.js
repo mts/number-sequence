@@ -20,7 +20,7 @@ class DemoTemplate extends React.Component {
     const { sequenceCount } = this.state
 
     this.setState({
-      sequenceCount: sequenceCount + 5,
+      sequenceCount: sequenceCount + 10,
     })
   }
 
@@ -38,7 +38,7 @@ class DemoTemplate extends React.Component {
             <Link to={startPageRoute}>Back to Start Page</Link>
           </div>
 
-          {sequenceCount < 20 ? <Button onClick={this.handleButtonOnClick}>{actionMessage}</Button> : null}
+          {sequenceCount < 15 ? <Button onClick={this.handleButtonOnClick}>{actionMessage}</Button> : null}
 
           <Query query={getSequencesQuery(sequenceCount)}>
             {({ data }) => (data.sequences && data.sequences.sequences ? <SequenceCard sequences={data.sequences.sequences} /> : null)}
