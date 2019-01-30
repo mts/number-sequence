@@ -35,11 +35,11 @@
 > Display incremental number sequences
 
 ## App running on GitHub Pages
-**⚠️ Enable CORS using this [Chrome extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en) and toggle CORS on if necessary!**
+> ⚠️ Enable CORS using this [Chrome extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en) and toggle CORS on if necessary!
 
 ## Features
 
-- Displays the following 5 number sequences by default
+> Displays the following 5 number sequences by default
 
 ```
                                                  [1]
@@ -49,7 +49,7 @@
                                            [1, 4, 6, 4, 1]
 ```
 
-- Display the following 10 number sequences afterwards
+> Display the following 10 number sequences afterwards
 
 ```
                                          [1, 5, 10, 10, 5, 1]
@@ -62,8 +62,9 @@
                       [1, 12, 66, 220, 495, 792, 924, 792, 495, 220, 66, 12, 1]
                   [1, 13, 78, 286, 715, 1287, 1716, 1716, 1287, 715, 286, 78, 13, 1]
               [1, 14, 91, 364, 1001, 2002, 3003, 3432, 3003, 2002, 1001, 364, 91, 14, 1]
-
 ```
+
+> Sequence calculation logic is implemented in `packages/server/src/datasources/number-sequence.js` and tested in `packages/server/src/datasources/number-sequence.test.js`
 
 ## Stack & patterns
 
@@ -125,7 +126,6 @@
 ### Client App
 
 - `.env.develop` when building with webpack-dev-server for development
-
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
   - SERVER_URL=`http://localhost:4000/graphql`
 
@@ -140,6 +140,8 @@
   - ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
 
 ## Components
+
+> UI components are implemented and composed using Atomic Design
 
 ### Atoms
 
