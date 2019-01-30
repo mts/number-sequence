@@ -64,7 +64,9 @@
               [1, 14, 91, 364, 1001, 2002, 3003, 3432, 3003, 2002, 1001, 364, 91, 14, 1]
 ```
 
-> Sequence calculation logic is implemented in `packages/server/src/datasources/number-sequence.js` and tested in `packages/server/src/datasources/number-sequence.test.js`
+> Sequence calculation logic is
+> implemented in `packages/server/src/datasources/number-sequence.js` and
+> tested in `packages/server/src/datasources/number-sequence.test.js`
 
 ## Stack & patterns
 
