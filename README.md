@@ -107,23 +107,23 @@
 - `Configure build pack`: `heroku config:add BUILDPACK='packages/server=https://github.com/heroku/heroku-buildpack-nodejs#v133' -a number-sequence-server`
 - `Deploy`: `git push heroku master`
 - `Monitor`: `heroku logs --tail`
-- `Check app`: https://number-sequence-server.herokuapp.com/
+- `Check app`: `https://number-sequence-server.herokuapp.com/`
 
 ## Environment variables
 
 ### Client App
 - env.develop when building with webpack-dev-server for development
-  ENGINE_API_KEY=<APOLLO ENGINE API KEY>
-  SERVER_URL=http://localhost:4000/graphql
+  ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
+  SERVER_URL=`http://localhost:4000/graphql`
 
 - env.release when building with webpack for production
   BASE_URL=/number-sequence
-  ENGINE_API_KEY=<APOLLO ENGINE API KEY>
-  SERVER_URL=https://number-sequence-server.herokuapp.com/graphql
+  ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
+  SERVER_URL=`https://number-sequence-server.herokuapp.com/graphql`
 
 ### Server App
 - .env
-  ENGINE_API_KEY=<APOLLO ENGINE API KEY>
+  ENGINE_API_KEY=`<APOLLO ENGINE API KEY>`
 
 ## Components
 
