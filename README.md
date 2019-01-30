@@ -148,7 +148,7 @@
   `rendering`
   a button element.
 
-- ```javascript
+```javascript
 <Button onClick={() => {}}>some text</Button>
 ```
 
@@ -160,7 +160,7 @@
   `rendering`
   its children.
 
-- ```javascript
+```javascript
 <Sequence>5</Sequence>
 ```
 
@@ -173,7 +173,7 @@
   a fallback UI in case a JavaScript error is caught and
   it's children if not.
 
-- ```javascript
+```javascript
 <ErrorBoundary>
   <SomeComponent />
 </ErrorBoundary>
@@ -189,7 +189,7 @@
   `rendering`
   its children.
 
-- ```javascript
+```javascript
 <HeroBanner>
   <SomeComponent />
 </HeroBanner>
@@ -203,7 +203,7 @@
   `rendering`
   `Sequence` a component for each sequence.
 
-- ```javascript
+```javascript
 const sequences = [
   { numbers: [1] },
   { numbers: [1, 1] },
@@ -222,7 +222,7 @@ const sequences = [
   `rendering`
   its children.
 
-- ```javascript
+```javascript
 <Header>some text</Header>
 ```
 
@@ -234,7 +234,7 @@ const sequences = [
   `rendering`
   a Link component pointing to the demo page route.
 
-- ```javascript
+```javascript
 <SideBar />
 ```
 
@@ -257,7 +257,7 @@ const sequences = [
   `querying`
   sequence data.
 
-- ```javascript
+```javascript
 const page = {
   page: {
     id: 'demo',
@@ -276,7 +276,7 @@ const page = {
   `rendering`
   `Header`, `SideBar` and `HeroBanner` components.
 
-- ```javascript
+```javascript
 const page = {
   page: {
     id: 'start',
@@ -299,7 +299,7 @@ const page = {
   `querying`
   page data.
 
-- ```javascript
+```javascript
 <DemoPage />
 ```
 
@@ -313,7 +313,7 @@ const page = {
   `querying`
   page data.
 
-- ```javascript
+```javascript
 <StartPage />
 ```
 
